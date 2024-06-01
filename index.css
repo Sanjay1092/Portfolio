@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #3e362e; */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  scrollbar-width: none;
+}
+body {
+  background-color: rgb(13, 6, 6);
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+header > a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 15%;
+  margin-left: 9%;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.intro {
+  padding: 10px;
+  width: 50%;
+  background-color: orange;
+  border-radius: 12px;
+}
+.intro > p:nth-child(2) {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+.skills {
+  margin-top: 5%;
+  margin-left: 50%;
+  background-color: orange;
+  padding: 20px;
+  width: 22%;
+  border-radius: 12px;
+}
+.frameWorks {
+  margin-top: 5%;
+  background-color: orange;
+  padding: 20px;
+  width: 22%;
+  border-radius: 12px;
+}
+.skills > h2,
+.frameWorks > h2,
+#connect > h2 {
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+.skills > ul > li,
+.frameWorks > ul > li {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+  padding-left: 40px;
+  list-style: none;
+  padding-bottom: 5px;
+}
+.skills-sec {
+  display: flex;
+  gap: 25px;
+}
+#connect {
+  margin-top: 50%;
+  margin-left: 38%;
+  margin-bottom: 2%;
+  width: 25%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.connect-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  gap: 10px;
+}
+
+.connect-inner > a > i {
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+.connect-inner > a {
+  text-decoration: none;
+}
+
+.footer-border {
+  border: 1px solid whitesmoke;
+  margin-bottom: 2px;
+}
+footer > a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+@media screen and (max-width: 1096px) {
+  .frameWorks > h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .skills {
+    margin-left: 0%;
+    width: min-content;
+  }
+  .frameWorks {
+    width: min-content;
+  }
+  #connect {
+    margin-left: 10%;
+    width: min-content;
+  }
+  .skills-sec {
+    flex-direction: column;
+  }
+  .skills > h2,
+  .frameWorks > h2,
+  #connect > h2 {
+    font-size: medium;
+  }
+}
